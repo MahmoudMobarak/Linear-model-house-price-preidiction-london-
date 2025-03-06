@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-#import plotly.express as px
+import plotly.express as px
 import pandas as pd
 import numpy as np
 import pandas as pd
@@ -18,10 +18,10 @@ r2=r2_score(y_test,y_pred)
 st.title("Welcome to my linear regression model")
 st.subheader("This model can predict the value of houses in london")
 st.write("Here is the accuracy of the model:")
-#labels = ['Correct','Incorrect']
-#sizes = [r2*100,100-(r2*100)]
-#fig = px.pie(values=sizes, names=labels, title='Accuracy')
-#st.plotly_chart(fig)
+labels = ['Correct','Incorrect']
+sizes = [r2*100,100-(r2*100)]
+fig = px.pie(values=sizes, names=labels, title='Accuracy')
+st.plotly_chart(fig)
 st.subheader("So,How about you try it out and predict the value of your dream hosue!")
 bedrooms=st.selectbox("Select the number of bedrooms you want",[1,2,3,4,5])
 bathrooms=st.selectbox("Select the number of bathrooms you want",[1,2,3])
