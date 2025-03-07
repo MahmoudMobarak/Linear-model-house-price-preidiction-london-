@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 LR=LinearRegression()
-url = "https://raw.githubusercontent.com/your-username/your-repo/main/london_houses.csv"
+url = "https://raw.githubusercontent.com/MahmoudMobarak/Linear-model-house-price-preidiction-london-/refs/heads/main/index-main.py"
 data = pd.read_csv(url)
 y=data['Price (£)']
 x = data.drop(['Address', 'Neighborhood', 'Price (£)'], axis=1)
