@@ -2,5 +2,6 @@ matplotlib==3.10.1
 numpy==2.2.3
 pandas==2.2.3
 plotly==6.0.0
+Requests==2.32.3
 scikit_learn==1.6.1
 seaborn==0.13.2
