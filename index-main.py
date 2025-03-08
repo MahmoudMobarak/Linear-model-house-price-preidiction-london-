@@ -9,8 +9,11 @@ from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 LR=LinearRegression()
 url = "https://raw.githubusercontent.com/MahmoudMobarak/Linear-model-house-price-preidiction-london-/refs/heads/main/index-main.py"
+import requests
+url = "https://your-public-url-to-csv-file.csv"
 response = requests.get(url)
-data = pd.read_csv(pd.compat.StringIO(response.text))
+from io import StringIO
+data = pd.read_csv(StringIO(response.text))
 y=data['Price (£)']
 x = data.drop(['Address', 'Neighborhood', 'Price (£)'], axis=1)
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
