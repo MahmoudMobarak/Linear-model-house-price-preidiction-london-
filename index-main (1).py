@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 LR=LinearRegression()
-url = "https://raw.githubusercontent.com/MahmoudMobarak/Linear-model-house-price-preidiction-london-/refs/heads/main/index-main.py"
+url = "https://raw.githubusercontent.com/MahmoudMobarak/Linear-model-house-price-preidiction-london-/refs/heads/main/index-main(1).py"
 import requests
 url = "https://your-public-url-to-csv-file.csv"
 response = requests.get(url)
