@@ -13,7 +13,7 @@ import requests
 response = requests.get(url)
 from io import StringIO
 data = pd.read_csv(StringIO(response.text))
-y=data['Price (£)']
+y = data.get('Price (£)')
 x = data.drop(['Address', 'Neighborhood', 'Price (£)'], axis=1)
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 LR.fit(x_train,y_train)
