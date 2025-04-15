@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 LR=LinearRegression()
-data=pd.read_csv('london_houses_cleaned.csv',encoding='utf-8)
+data=pd.read_csv('london_houses_cleaned.csv',encoding='utf-8')
 x=data.drop[r'Address',r'Neighborhood,r'Price (£)',axis=0]
 y=data['Price (£)']
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
