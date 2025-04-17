@@ -95,7 +95,7 @@ if Materials=='Granite':
     Materials_final=0
 elif Materials=='Wood':
     Materials_final=3
-elif Materials=='Laminate':
+elif Materials=='Laminate Flooring':
     Materials_final=1
 elif Materials=='Marble':
     Materials_final=2
