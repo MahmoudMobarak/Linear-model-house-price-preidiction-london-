@@ -100,7 +100,7 @@ elif Materials=='Laminate Flooring':
 elif Materials=='Marble':
     Materials_final=2
 if Building_status=='New':
-    Building_status_final=0
+    Building_Status_final=0
 elif Building_status=='Old':
     Building_Status_final=1
 elif Building_status=='Renovated':
