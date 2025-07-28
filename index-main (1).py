@@ -108,6 +108,8 @@ elif Building_status=='Renovated':
 feature_names = ['Unnamed: 0','Bedrooms','Bathrooms','Square Meters','Building Age','Garden','Garage'
 ,'Floors','Property Type','Heating Type','Balcony','Interior Style','View'
 ,'Materials','Building Status']
+property_type_dict = {'Apartment': 0, 'Semi-Detached': 1, 'Detached House': 2}
+Property_Type_final = property_type_dict.get(Property_Type, 0)
 data_values = [0,bedrooms,bathrooms,square_meters_scaled,building_age_scaled,garden_final,garage_final,floors,Property_Type_final,
                Heating_Type_final,Balcony_final,Interior_Style_final,View_final,Materials_final,Building_Status_final]
 data_df = pd.DataFrame([data_values], columns=feature_names)
